@@ -1,0 +1,18 @@
+%Alexander Martinez Cisneros
+%Grupo:3202
+%Funciones primitivas
+lim_a=input('coloque el inicio del limite');
+lim_b=input('coloque el fin del limite');
+nu_inte=200;
+
+f= input('indique la funcion');
+h= (lim_b-lim_a)/nu_inte;
+u=lim_a:h:lim_b;
+int=0;
+
+for i=1:nu_inte;
+ xm=(u(i)+u(i+1))/2;
+int=int+f(xm)*h; 
+end
+fprintf('el resultado del area es');
+fprintf('%d', int);
