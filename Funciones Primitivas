@@ -1,6 +1,8 @@
 %Alexander Martinez Cisneros
 %Grupo:3202
 %Funciones primitivas
+clc
+clear
 lim_a=input('coloque el inicio del limite');
 lim_b=input('coloque el fin del limite');
 nu_inte=200;
@@ -16,3 +18,4 @@ int=int+f(xm)*h;
 end
 fprintf('el resultado del area es');
 fprintf('%d', int);
+plot(lim_a,lim_b);
